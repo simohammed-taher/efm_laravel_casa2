@@ -67,7 +67,7 @@ php artisan serve
 
 [**DEMO**](https://github.com/simohammed-taher/efm_laravel_casa1)
 
-<video src="https://github.com/simohammed-taher/efm_laravel_casa1/assets/100471051/9e566508-a03a-420e-adbb-eb99af7aa087" controls autoplay></video>
+https://github.com/simohammed-taher/efm_laravel_casa2/assets/100471051/fc5747c9-ce6f-44fc-b14d-83d69435d639
 
 ## Licence 📝
 

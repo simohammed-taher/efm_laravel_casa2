@@ -32,28 +32,28 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Nom</th>
-                            <th>Prénom</th>
-                            <th>Cin</th>
-                            <th>Email</th>
-                            <th>Fonction</th>
-                            <th>Action</th>
+                            <th style="text-align: center">ID</th>
+                            <th style="text-align: center">Nom</th>
+                            <th style="text-align: center">Prénom</th>
+                            <th style="text-align: center">Cin</th>
+                            <th style="text-align: center">Email</th>
+                            <th style="text-align: center">Fonction</th>
+                            <th style="text-align: center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         @forelse ($proprietaires as $proprietaire)
                             <tr>
-                                <td>{{ $proprietaire->id }}</td>
-                                <td>{{ $proprietaire->nom }}</td>
-                                <td>{{ $proprietaire->prenom }}</td>
-                                <td>{{ $proprietaire->cin }}</td>
-                                <td>{{ $proprietaire->email }}</td>
-                                <td>{{ $proprietaire->fonction }}</td>
-                                <td>
+                                <td style="text-align: center">{{ $proprietaire->id }}</td>
+                                <td style="text-align: center">{{ $proprietaire->nom }}</td>
+                                <td style="text-align: center">{{ $proprietaire->prenom }}</td>
+                                <td style="text-align: center">{{ $proprietaire->cin }}</td>
+                                <td style="text-align: center">{{ $proprietaire->email }}</td>
+                                <td style="text-align: center">{{ $proprietaire->fonction }}</td>
+                                <td class="d-flex justify-content-center">
                                     <a href="{{ url('/proprietaires/' . $proprietaire->id . '/edit') }}"
                                         title="Edit proprietaire">
-                                        <button class="btn btn-primary btn-sm">
+                                        <button class="btn btn-primary btn-sm" style="margin-right: 5px">
                                             <i class="bi bi-pencil-square"></i> modifier
                                         </button>
                                     </a>
@@ -61,7 +61,7 @@
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger btn-sm" title="Delete Student"
-                                            onclick="return confirm('Confirm delete?')">
+                                            onclick="return confirm('Confirm delete?')" style="margin-left: 5px">
                                             <i class="bi bi-trash"></i> supprimer
                                         </button>
                                     </form>
